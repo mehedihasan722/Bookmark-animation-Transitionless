@@ -60,5 +60,10 @@ body {
 }
 
 .bookmark-button__star {
-  transition: fill 0.2s;
+  transform-origin: 50% 50%;
+  transition: fill 0.2s, transform 0.5s;
+}
+
+.bookmark-button--active .bookmark-button__star {
+  transform: rotate(216deg);
 }
